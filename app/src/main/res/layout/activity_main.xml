@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <TextView
+        android:id="@+id/nameCity"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Manado"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeather" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Wed, 11 Okt"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeather" />
+
+    <TextView
+        android:id="@+id/Humidity"
+        android:layout_width="186dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="37dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Humidity"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toStartOf="@+id/lblHumidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pressure" />
+
+    <TextView
+        android:id="@+id/lblHumidity"
+        android:layout_width="51dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-light"
+        android:text="25"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/Humidity"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="38dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-light"
+        android:text="%"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/lblHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/Pressure"
+        android:layout_width="186dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Pressure"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaxTemp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="51dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-light"
+        android:text="mbar"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/lblPressure"
+        app:layout_constraintTop_toBottomOf="@+id/lblMaxTemp" />
+
+    <TextView
+        android:id="@+id/lblPressure"
+        android:layout_width="51dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-light"
+        android:text="25"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/Pressure"
+        app:layout_constraintTop_toBottomOf="@+id/lblMaxTemp" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="217dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Clouds"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTemp" />
+
+    <TextView
+        android:id="@+id/Min.Temp"
+        android:layout_width="186dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Min. Temperature"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+    <TextView
+        android:id="@+id/MaxTemp"
+        android:layout_width="186dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Max. Temperature"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Min.Temp" />
+
+    <TextView
+        android:id="@+id/lblMaxTemp"
+        android:layout_width="51dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="25 °C"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/MaxTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblMinTemp" />
+
+    <TextView
+        android:id="@+id/lblMinTemp"
+        android:layout_width="51dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif-light"
+        android:text="25 °C"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toEndOf="@+id/Min.Temp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/lblTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:text="24"
+        android:textColor="#FFFFFF"
+        android:textSize="120dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeather" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="sans-serif"
+        android:text="°"
+        android:textColor="#FFFFFF"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/lblTemp"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="sans-serif"
+        android:text="C"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputWeather"
+        android:layout_width="216dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="7dp"
+        android:hint="City"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="34dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputWeather"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
